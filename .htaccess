@@ -1,0 +1,23 @@
+# Enable the RewriteEngine
+RewriteEngine On
+RewriteRule ^maintaince$ /maintaince.php
+
+# Rewrite rule to map /schedule to index.php?page=schedule and preserve query string
+# RewriteCond %{QUERY_STRING} ^e=([a-zA-Z0-9]+)&y=([0-9]{4})$ [NC]
+# RewriteRule ^schedule$ /index.php?page=schedule [L,QSA]
+
+# Optional: If you want to handle requests to /schedule without query parameters
+# RewriteRule ^schedule$ /index.php?page=schedule [L,QSA]
+# RewriteRule ^home /index.php?page=home [L]
+# RewriteRule ^about /index.php?page=about [L]
+# RewriteRule ^exhibit-profile /index.php?page=exhibit-profile [L]
+# RewriteRule ^why-exhibit /index.php?page=why-exhibit [L]
+# RewriteRule ^visit /index.php?page=visit [L]
+# RewriteRule ^map /index.php?page=map [L]
+# RewriteRule ^contact /index.php?page=contact [L]
+
+# # RewriteRule ^schedule index.php?page=schedule
+# RewriteRule ^apjii-buyer index.php?page=apjiibuyer
+# RewriteRule ^([0-9]+)$ index.php?page=home&tahun=$1 [QSA,L]
+# RewriteRule ^list-exhibitor/([0-9]+)$ index.php?page=listexhibitor&tahun=$1
+# RewriteRule ^view-exhibitor/([0-9]+)$ index.php?page=viewexhibitor&id=$1
